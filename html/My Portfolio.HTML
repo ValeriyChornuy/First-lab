@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="/Html+css/images/xcod.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє портфоліо</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Html+css/css/Profile.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Моє портфоліо</h1>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="Про мене.html" >Про мене</a></li>
+                <li><a class="nav-link" href="My Portfolio.html">Портфоліо</a></li>
+                <li><a class="nav-link" href="Контакти.html">Контакти</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Фотогалерея</h2>
+            <div class="gallery">
+                <img src="/Html+css/images/Photo-1.jpg" alt="Аніме" class="gallery-image" >
+                <img src="/Html+css/images/Photo-2.jpg" alt="Абстракція" class="gallery-image">
+                <img src="/Html+css/images/Photo-3.jpg" alt="Валєра тобто Я" class="gallery-image" >
+                <img src="/Html+css/images/image1.jpg" alt="Валєра тобто Я" class="gallery-image">
+                <img src="/Html+css/images/image2.jpg" alt="Валєра тобто Я" class="gallery-image" >
+                <img src="/Html+css/images/Photo-7.jpg" alt="Валєра тобто Я" class="gallery-image">
+              </div>
+        </section>
+
+        <section>
+            <h2>НАВЧАННЯ не СТРАЖДАННЯ</h2>
+            <p>Немає слів одні емоції. Як усім знайомо,що навчальний процес ніколи не буває легкий тому роби все що на відео і тобі посміхнеться удача
+               </p>
+        </section>
+
+        <section>
+    <h2>Відео</h2>
+    <div class="container text-center">
+  <div class="embed-responsive embed-responsive-16by9 rounded">
+    <iframe class="embed-responsive-item"
+      src="https://www.youtube.com/embed/_S7WEVLbQ-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
+
+</section>
+
+
+        <section>
+            <h2>Блок для програмного коду</h2>
+            <pre>
+    <code>
+        // Ваш програмний код тут
+        function helloWorld() {
+            console.log("Hello, World!");
+        }
+    </code>
+</pre>
+
+        </section>
+
+        <section>
+              <h2>Форма зворотнього зв'язку</h2>
+              <div class="feedback-form">
+                <!-- Додав атрибут novalidate, щоб вимкнути вбудовану валідацію браузера та надіслати дані на сервер -->
+<form method="post" action="/Html+css/php/process_form.php" novalidate>
+  <div class="form-group">
+      <label for="name">Ім'я:</label>
+      <input type="text" name="name" id="name" required>
+  </div>
+
+  <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+  </div>
+
+  <div class="form-group">
+      <label for="password">Пароль:</label>
+      <input type="password" name="password" id="password" required>
+  </div>
+
+  <div class="form-group">
+      <label for="content">Повідомлення:</label>
+      <textarea name="content" id="content"></textarea>
+  </div>
+
+  <div class="form-group">
+      <input type="submit" value="Надіслати" class="btn btn-primary">
+  </div>
+</form>
+</div>
+          </section>
+
+        <section>
+            <h2>Не план, а казка)</h2>
+            <table>
+                <tr>
+                    <th>ТЯЖЧЕ РЕАЛІЗУВАТИ</th>
+                    <th>ЛЕГШЕ РЕАЛІЗУВАТИ</th>
+                </tr>
+                <tr>
+                    <td>НАВЧАННЯ</td>
+                    <td>ЗАРОБІТКИ не В ПОЛЬЩІ</td>
+                </tr>
+                <tr>
+                    <td>КУПІВЛЯ ТОПОВОГО ЖЕЛІЗА</td>
+                    <td>ПК ГЕЙМІНГ</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Моє портфоліо
+    </footer>
+    <script>
+    $(document).ready(function() {
+        $('.gallery-image').click(function() {
+            var imageUrl = $(this).attr('src');
+            $('#modalImage').attr('src', imageUrl);
+            $('#imageModal').modal('show'); // Відображення модального вікна
+        });
+    });
+
+    function closeModal() {
+        $('#imageModal').modal('hide');
+    }
+      </script>
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" class="img-fluid" alt="Велике фото">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
