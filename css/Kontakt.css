@@ -1,0 +1,82 @@
+body {
+    background-image: url('/Html+css/images/Photo-9.jpg'); /* Шлях до вашого фото */
+    background-size: cover; /* Розтягнути зображення, щоб воно повністю покривало фон */
+    background-position: center; /* Вирівняти фон по центру */
+    background-repeat: no-repeat; /* Заборонити повторення фону */
+    color: #ffffff; /* Колір тексту на фоні, якщо потрібно встановити кольори тексту та інші стилі */
+}
+/* Заголовок */
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Навігація */
+nav {
+    background-color: #393939;
+    color: white;
+    text-align: center;
+}
+header nav ul li a {
+   color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Заголовок футера */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+    .team-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .round-image {
+        border-radius: 80%;
+        max-width: 35%;
+    }
+
+    .contact-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    footer {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: white;
+        transition: transform 0.5s ease-out;
+    }
+
+    .nav-link:hover {
+        transform: translateY(-10px);
+    }
+    .nav-link:hover {
+        color: white; /* Замініть це на кольор, який ви бажаєте використовувати при наведенні */
+        text-decoration: none; /* Це виключить підкреслення тексту при наведенні */
+    }

@@ -1,0 +1,74 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+    background-image: url('/Html+css/images/Photo-9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+        }
+        /* Заголовок */
+        h1 {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Навігація */
+        nav {
+            background-color: #393939;
+            color: white;
+            text-align: center;
+        }
+        header nav ul li a {
+           color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        /* Заголовок футера */
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: white;
+            transition: transform 0.5s ease-out;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-10px);
+        }
+        .nav-link:hover {
+            color: white; /* Замініть це на кольор, який ви бажаєте використовувати при наведенні */
+            text-decoration: none; /* Це виключить підкреслення тексту при наведенні */
+        }
